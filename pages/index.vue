@@ -9,9 +9,24 @@
       <h3 class="names-grayed">A co Henlein?</h3>
     </div>
   </div>
-  <NuxtLink to="/about"
-    ><PrimaryButton content="Spustit kalkulačku ->"
-  /></NuxtLink>
+  <div class="middle">
+    <NuxtLink to="/kalkulacka/intro"
+      ><PrimaryButton content="Spustit kalkulačku ->"
+    /></NuxtLink>
+    <NuxtLink class="link-parties" to="/strany"
+      >Strany, které v kalkulačce najdete -></NuxtLink
+    >
+  </div>
+  <div class="about-wrap">
+    <h2>O projektu</h2>
+    <p>
+      Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+      Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+      Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+      Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+      Text Text Text Text Text Text Text Text Text Text
+    </p>
+  </div>
 </template>
 
 <style scoped>
@@ -28,5 +43,29 @@
 
 h3 {
   font-size: 1.6em;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.link-parties {
+  color: var(--primary-blue);
+  font-size: 1em;
+}
+
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & > h2 {
+    font-size: 1.3em;
+  }
+  & > p {
+    line-height: 1.2;
+  }
 }
 </style>
