@@ -6,6 +6,8 @@
 
 :root {
   --main-bg-color: #f0f0f0;
+  --primary-blue: #0470ee;
+  --text-gray: #717171;
 }
 
 *,
@@ -14,4 +16,5 @@
   margin: 0;
   padding: 0;
   font-family: "Inter";
+  border: none;
 }
