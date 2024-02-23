@@ -55,6 +55,7 @@ h3 {
 .link-parties {
   color: var(--primary-blue);
   font-size: 1em;
+  text-decoration: none;
 }
 
 .about-wrap {
