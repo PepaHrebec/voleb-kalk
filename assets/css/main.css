@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
+  font-style: normal;
+}
+
+:root {
+  --main-bg-color: #f0f0f0;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
