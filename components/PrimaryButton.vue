@@ -8,7 +8,7 @@ defineProps<{
   <button>{{ content }}</button>
 </template>
 
-<style>
+<style scoped>
 button {
   padding: 12px 36px;
   background-color: var(--primary-blue);
