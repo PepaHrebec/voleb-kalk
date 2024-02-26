@@ -3,11 +3,13 @@
     {
       "name": "Národní Obec Fašistická",
       "description": "A pretty based party imho.",
+      "representants": [""],
       "circleColor": "#A0A0A0"
     },
     {
       "name": "Národní Socialisté",
       "description": "A pretty based party imho.",
+      "representants": [""],
       "circleColor": "gold"
     }
   ]
