@@ -1,17 +1,27 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string;
+  currentQuestionNum?: number;
+  listLength?: number;
+  isIntro: boolean;
 }>();
 </script>
 
 <template>
   <main>
+    <p>{{ currentQuestionNum }} / {{ listLength }}</p>
     <h1>{{ title }}</h1>
     <p>
       Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
       Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
       Text Text Text Text Text Text Text Text Text Text Text Text
     </p>
+
+    <QuestionNavButtons
+      v-if="!isIntro"
+      :current-question-num="currentQuestionNum"
+      :list-length="listLength"
+    />
   </main>
 </template>
 
