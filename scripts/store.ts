@@ -1,7 +1,15 @@
 import { defineStore } from "pinia";
+import type { ParsedQuestions, Question } from "~/types/types";
 
-export const useCounterStore = defineStore("counter", () => {
-  const list = ref([0, 0, 0, 0, 0, 0]);
+export const useQuestionsStore = defineStore("questions", () => {
+  let list = ref<Question[] | undefined>([]);
 
-  return { list };
+  async function fillStore() {
+    const { data } = await useAsyncData("home", () =>
+      queryContent<ParsedQuestions>("/questions").findOne()
+    );
+    list.value = data.value?.questions;
+  }
+
+  return { list, fillStore };
 });
