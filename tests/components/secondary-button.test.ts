@@ -4,7 +4,7 @@ import SecondaryButtonVue from "~/components/SecondaryButton.vue";
 
 describe("Secondary button.", () => {
   test("Properly renders the button.", async () => {
-    render(SecondaryButtonVue, { props: { text: "Hello", red: "false" } });
+    render(SecondaryButtonVue, { props: { text: "Hello", red: false } });
     expect(screen.getByText("Hello")).toBeDefined();
   });
 
