@@ -1,7 +1,10 @@
 <template>
   <div class="layout-wrap">
-    <header class="header">
-      <h1 class="header-heading">Volební kalkulačka</h1>
+    <header>
+      <NuxtLink to="/"
+        ><h1 class="header-heading">Volební kalkulačka</h1></NuxtLink
+      >
+      <p>1918 - 1938</p>
     </header>
     <slot />
   </div>
@@ -10,11 +13,28 @@
 <style scoped>
 .layout-wrap {
   min-height: 100vh;
-  padding: 4px;
+  padding: 16px;
   background-color: var(--main-bg-color);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 64px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: small;
+  color: var(--text-gray);
 }
 
 .header-heading {
   font-weight: bold;
+  color: black;
 }
 </style>
