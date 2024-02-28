@@ -1,10 +1,8 @@
 <script setup lang="ts">
+import type { Party } from "~/types/types";
+
 defineProps<{
-  party: {
-    name: string;
-    description: string;
-    circleColor: string;
-  };
+  party: Party;
 }>();
 </script>
 

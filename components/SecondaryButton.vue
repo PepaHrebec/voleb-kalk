@@ -3,10 +3,14 @@ const props = defineProps<{
   text: string;
   red: boolean;
 }>();
+
+const color = computed(() => {
+  return props.red ? "red" : "blue";
+});
 </script>
 
 <template>
-  <button>{{ text }}</button>
+  <button :class="color">{{ text }}</button>
 </template>
 
 <style scoped>
@@ -16,6 +20,7 @@ button {
   font-weight: bold;
   font-size: 1.2em;
   flex: 1;
+  min-width: 150px;
   &:hover {
     cursor: pointer;
   }

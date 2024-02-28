@@ -2,16 +2,18 @@
 defineProps<{
   forward: string;
   back: string;
+  forwardText: string;
+  backText: string;
 }>();
 </script>
 
 <template>
   <div class="buttons">
     <NuxtLink :to="back">
-      <SecondaryButton text="Zpět" :red="true" class="red" />
+      <SecondaryButton :text="backText" :red="true" />
     </NuxtLink>
     <NuxtLink :to="forward">
-      <SecondaryButton text="Pokračovat" :red="true" class="blue" />
+      <SecondaryButton :text="forwardText" :red="false" />
     </NuxtLink>
   </div>
 </template>

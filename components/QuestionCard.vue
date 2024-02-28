@@ -1,27 +1,30 @@
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   title: string;
+  isIntro: boolean;
   currentQuestionNum?: number;
   listLength?: number;
-  isIntro: boolean;
 }>();
 </script>
 
 <template>
   <main>
-    <p>{{ currentQuestionNum }} / {{ listLength }}</p>
-    <h1>{{ title }}</h1>
-    <p>
-      Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-      Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-      Text Text Text Text Text Text Text Text Text Text Text Text
-    </p>
-
-    <QuestionNavButtons
-      v-if="!isIntro"
-      :current-question-num="currentQuestionNum"
-      :list-length="listLength"
-    />
+    <div class="top-wrap">
+      <p>{{ currentQuestionNum }} / {{ listLength }}</p>
+      <h1>{{ title }}</h1>
+      <p>
+        Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+        Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+        Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+      </p>
+    </div>
+    <div class="bottom-wrap">
+      <QuestionNavButtons
+        v-if="!isIntro"
+        :current-question-num="currentQuestionNum"
+        :list-length="listLength"
+      />
+    </div>
   </main>
 </template>
 
@@ -36,7 +39,13 @@ main {
   box-shadow: 11px 10px 12px -4px rgba(224, 224, 224, 1);
   display: flex;
   flex-direction: column;
+}
+
+.top-wrap {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
+  flex: 1;
 }
 
 h1 {

@@ -18,5 +18,6 @@ button {
   font-size: 1.2em;
   box-shadow: 0 4px 6px 0 var(--primary-blue);
   margin-bottom: 20px;
+  cursor: pointer;
 }
 </style>
