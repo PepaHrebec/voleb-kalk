@@ -1,8 +1,10 @@
 import { defineNuxtPlugin } from "#app";
-import { useQuestionsStore } from "~/scripts/store";
+import { useAnswersStore, useQuestionsStore } from "~/scripts/store";
 
 export default defineNuxtPlugin(async () => {
-  const todos = useQuestionsStore(useNuxtApp().$pinia);
+  const questions = useQuestionsStore(useNuxtApp().$pinia);
+  const answers = useAnswersStore(useNuxtApp().$pinia);
 
-  await todos.fillStore();
+  await answers.fillStore();
+  await questions.fillStore();
 });
