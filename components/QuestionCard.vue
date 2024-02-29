@@ -23,6 +23,7 @@ defineProps<{
         v-if="!isIntro"
         :current-question-num="currentQuestionNum"
         :list-length="listLength"
+        @sendValue="(value) => console.log(value)"
       />
     </div>
   </main>
