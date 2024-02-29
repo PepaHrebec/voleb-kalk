@@ -9,8 +9,23 @@ describe("Intro buttons", () => {
       props: {
         forward: "/kalkulacka/intro/2",
         back: "/",
+        forwardText: "",
+        backText: "",
       },
     });
-    expect((await screen.findAllByRole("button")).length === 2).toBe(true);
+    expect(screen.getAllByRole("button").length === 2).toBe(true);
+  });
+
+  test("Buttons render text properly.", async () => {
+    await renderSuspended(IntroButtonsVue, {
+      props: {
+        forward: "/kalkulacka/intro/2",
+        back: "/",
+        forwardText: "Next",
+        backText: "Back",
+      },
+    });
+    expect(screen.getByText("Next")).toBeDefined();
+    expect(screen.getByText("Back")).toBeDefined();
   });
 });
