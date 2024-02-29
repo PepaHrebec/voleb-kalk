@@ -10,6 +10,15 @@ const { answersList } = storeToRefs(answersStore);
 
 const route = useRoute();
 
+function answerAndRoute(answerValue: number) {
+  answersStore.setAnswer(currentQuestionNum.value - 1, answerValue);
+  setTimeout(async () => {
+    await useRouter().push(
+      `/kalkulacka/otazky/${currentQuestionNum.value + 1}`
+    );
+  }, 200);
+}
+
 const currentQuestionNum = computed(() => {
   return Number(route.params.id);
 });
@@ -37,9 +46,7 @@ const questionTitle = computed(() => {
       :is-intro="false"
     />
     <AnswerButtons
-      @send-value="
-        (value) => answersStore.setAnswer(currentQuestionNum - 1, value)
-      "
+      @send-value="answerAndRoute"
       :answer-value="currentAnswerValue"
     />
   </div>
