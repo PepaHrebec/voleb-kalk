@@ -6,12 +6,7 @@ const props = defineProps<{
 }>();
 
 const selected = computed(() => {
-  switch (props.alreadyAnsweredValue) {
-    case props.clickedValue:
-      return "selected";
-    default:
-      return "";
-  }
+  return props.clickedValue === props.alreadyAnsweredValue ? "selected" : "";
 });
 </script>
 

@@ -2,40 +2,19 @@
 defineProps<{
   answerValue: number;
 }>();
+
+const templateText = ["Silně ano", "Ano", "Nevím", "Ne", "Silně ne"];
 </script>
 
 <template>
   <div class="answer-btns-wrap">
     <AnswerBtn
+      v-for="(text, index) in templateText"
       @send-value="(value) => $emit('sendValue', value)"
-      text="Silně ano"
-      :clickedValue="1"
+      :text="text"
+      :clickedValue="index + 1"
       :alreadyAnsweredValue="answerValue"
-    />
-    <AnswerBtn
-      @send-value="(value) => $emit('sendValue', value)"
-      text="Ano"
-      :clickedValue="2"
-      :alreadyAnsweredValue="answerValue"
-    />
-    <AnswerBtn
-      @send-value="(value) => $emit('sendValue', value)"
-      text="Nevím"
-      class="middle"
-      :clickedValue="3"
-      :alreadyAnsweredValue="answerValue"
-    />
-    <AnswerBtn
-      @send-value="(value) => $emit('sendValue', value)"
-      text="Ne"
-      :clickedValue="4"
-      :alreadyAnsweredValue="answerValue"
-    />
-    <AnswerBtn
-      @send-value="(value) => $emit('sendValue', value)"
-      text="Silně ne"
-      :clickedValue="5"
-      :alreadyAnsweredValue="answerValue"
+      :class="index === 2 ? `middle` : ``"
     />
   </div>
 </template>
