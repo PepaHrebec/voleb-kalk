@@ -2,14 +2,16 @@
   "parties": [
     {
       "name": "Národní Obec Fašistická",
+      "shortcut": "NOF",
       "description": "A pretty based party imho.",
-      "representants": [""],
+      "representatives": ["Radola Gajda"],
       "circleColor": "#A0A0A0"
     },
     {
       "name": "Národní Socialisté",
+      "shortcut": "CSNS",
       "description": "A pretty based party imho.",
-      "representants": [""],
+      "representatives": ["Edvard Beneš, Milada Horáková"],
       "circleColor": "gold"
     }
   ]
