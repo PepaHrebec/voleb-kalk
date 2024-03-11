@@ -14,7 +14,9 @@ function answerAndRoute(answerValue: number) {
   answersStore.setAnswer(currentQuestionNum.value - 1, answerValue);
   setTimeout(async () => {
     await useRouter().push(
-      `/kalkulacka/otazky/${currentQuestionNum.value + 1}`
+      currentQuestionNum.value !== questionsList.value?.length
+        ? `/kalkulacka/otazky/${currentQuestionNum.value + 1}`
+        : "/kalkulacka/otazky/souhrn"
     );
   }, 200);
 }
@@ -40,6 +42,11 @@ const questionTitle = computed(() => {
 <template>
   <div class="question-wrap">
     <QuestionCard
+      :text="
+        questionsList !== undefined
+          ? questionsList[currentQuestionNum - 1].description
+          : ''
+      "
       :title="questionTitle"
       :current-question-num="currentQuestionNum"
       :list-length="questionsList?.length"
