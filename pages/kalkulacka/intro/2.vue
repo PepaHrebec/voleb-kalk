@@ -2,7 +2,8 @@
 
 <template>
   <QuestionCard
-    title="Úvod 2"
+    title="Průběh kalkulačky"
+    text='Na otázky půjde odpovídat v rozsahu "Silně ano" až "Silně ně", přičemž je také možné otázky přeskočit nebo se k nim vracet šedými šipkami ve spodních rozích. Přeskočené otázky se budou registrovat jako "Nevím" a nebude jim přikládána taková váha. Po poslední otázce pujde všechny ještě zrevidovat.'
     :current-question-num="2"
     :list-length="2"
     :is-intro="true"
