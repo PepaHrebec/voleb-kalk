@@ -5,14 +5,70 @@
       "shortcut": "NOF",
       "description": "A pretty based party imho.",
       "representatives": ["Radola Gajda"],
-      "circleColor": "#A0A0A0"
+      "color": "black"
     },
     {
       "name": "Národní Socialisté",
       "shortcut": "CSNS",
       "description": "A pretty based party imho.",
-      "representatives": ["Edvard Beneš, Milada Horáková"],
-      "circleColor": "gold"
+      "representatives": ["Edvard Beneš", "Milada Horáková"],
+      "color": "gold"
+    },
+    {
+      "name": "Republikánská strana zemědělského a malorolnického lidu",
+      "shortcut": "AGR",
+      "description": "A pretty based party imho.",
+      "representatives": ["Antonín Švehla"],
+      "color": "#65a30d"
+    },
+    {
+      "name": "Československá strana lidová",
+      "shortcut": "LID",
+      "description": "A pretty based party imho.",
+      "representatives": ["Jan Šrámek"],
+      "color": "#3b82f6"
+    },
+    {
+      "name": "Československá sociálně demokratická strana dělnická",
+      "shortcut": "CSSD",
+      "description": "A pretty based party imho.",
+      "representatives": ["Antonín Hampl"],
+      "color": "#f97316"
+    },
+    {
+      "name": "Komunistická strana Československa",
+      "shortcut": "KSC",
+      "description": "A pretty based party imho.",
+      "representatives": ["Klement Gottwald"],
+      "color": "#b91c1c"
+    },
+    {
+      "name": "Národní Demokracie",
+      "shortcut": "ND",
+      "description": "A pretty based party imho.",
+      "representatives": ["Karel Kramář"],
+      "color": "#1e3a8a"
+    },
+    {
+      "name": "Československá živnostensko-obchodnická strana středostavovská",
+      "shortcut": "ZIV",
+      "description": "A pretty based party imho.",
+      "representatives": ["Rudolf Mlčoch", "Josef Najman"],
+      "color": "#fb7185"
+    },
+    {
+      "name": "Hlinkova slovenská ľudová strana",
+      "shortcut": "HL",
+      "description": "A pretty based party imho.",
+      "representatives": ["Andrej Hlinka"],
+      "color": "#e11d48"
+    },
+    {
+      "name": "Sudetoněmecká strana",
+      "shortcut": "SDP",
+      "description": "A pretty based party imho.",
+      "representatives": ["Konrad Henlein"],
+      "color": "#92400e"
     }
   ]
 }
