@@ -3,14 +3,14 @@
     {
       "name": "Národní Obec Fašistická",
       "shortcut": "NOF",
-      "description": "A pretty based party imho.",
+      "description": "Panslovansky orientovaná fašistická strana vedená bývalým představitelem Československých legií Radolou Gajdou. Nikdy nedosáhla značných volebních výsledků, požadovala národní stát založený na korporativním principu po vzoru Itálie a během Minchovské krize vystupovala silně protiněmecky.",
       "representatives": ["Radola Gajda"],
       "color": "black"
     },
     {
       "name": "Národní Socialisté",
       "shortcut": "CSNS",
-      "description": "A pretty based party imho.",
+      "description": "Národně liberální strana s programem založeným na nemarxistickém socialismu. Strana se silně odpírala o Hrad a demokracii, odmítala násilný třídní boj. Během let se stala stranou nejen národně oritentovaných dělníků, ale i úředníků a maloburžoazie.",
       "representatives": ["Edvard Beneš", "Milada Horáková"],
       "color": "gold"
     },
@@ -18,12 +18,12 @@
       "name": "Republikánská strana zemědělského a malorolnického lidu",
       "shortcut": "AGR",
       "description": "A pretty based party imho.",
-      "representatives": ["Antonín Švehla"],
+      "representatives": ["Antonín Švehla", "Rudolf Beran"],
       "color": "#65a30d"
     },
     {
       "name": "Československá strana lidová",
-      "shortcut": "LID",
+      "shortcut": "CSL",
       "description": "A pretty based party imho.",
       "representatives": ["Jan Šrámek"],
       "color": "#3b82f6"
@@ -32,21 +32,21 @@
       "name": "Československá sociálně demokratická strana dělnická",
       "shortcut": "CSSD",
       "description": "A pretty based party imho.",
-      "representatives": ["Antonín Hampl"],
+      "representatives": ["Antonín Hampl", "Vlastimil Tusar"],
       "color": "#f97316"
     },
     {
       "name": "Komunistická strana Československa",
       "shortcut": "KSC",
       "description": "A pretty based party imho.",
-      "representatives": ["Klement Gottwald"],
+      "representatives": ["Klement Gottwald", "Rudolf Slánský"],
       "color": "#b91c1c"
     },
     {
       "name": "Národní Demokracie",
       "shortcut": "ND",
       "description": "A pretty based party imho.",
-      "representatives": ["Karel Kramář"],
+      "representatives": ["Karel Kramář", "Alois Rašín"],
       "color": "#1e3a8a"
     },
     {
@@ -60,7 +60,7 @@
       "name": "Hlinkova slovenská ľudová strana",
       "shortcut": "HL",
       "description": "A pretty based party imho.",
-      "representatives": ["Andrej Hlinka"],
+      "representatives": ["Andrej Hlinka", "Jozef Tiso", "Vojtech Tuka"],
       "color": "#e11d48"
     },
     {
