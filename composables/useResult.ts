@@ -4,10 +4,10 @@ import type { ParsedAnswers } from "~/types/types";
 function innerCalculation(partyAns: number, userAns: number) {
   if (partyAns === 5 || userAns === 5 || partyAns === 1 || userAns === 1) {
     if (Math.abs(partyAns - userAns) === 1) {
-      return 0.5;
+      return 0.25;
     }
   }
-  if (partyAns === 3 || userAns === 3) {
+  if (userAns === 3) {
     return Math.abs(partyAns - userAns) / 2;
   }
 
@@ -22,7 +22,12 @@ export default async function useResult() {
   const answersStore = useAnswersStore();
   const { answersList } = storeToRefs(answersStore);
 
-  const resultArr: { shortcut: string; value: number }[] = [];
+  const resultArr: {
+    shortcut: string;
+    value: number;
+    name: string;
+    percentage: number;
+  }[] = [];
 
   if (partyAnswersData.data.value == undefined) {
     return null;
@@ -40,7 +45,12 @@ export default async function useResult() {
     }, 0);
     resultArr.push({
       shortcut: partyData.shortcut,
+      name: partyData.name,
       value: value,
+      percentage:
+        answersList.value?.length !== undefined
+          ? 100 - value / ((answersList.value?.length * 4) / 100)
+          : 0,
     });
   });
 
