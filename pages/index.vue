@@ -1,4 +1,9 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+import { useAnswersStore } from "~/scripts/answersStore";
+
+const answersStore = useAnswersStore();
+const { viewedResults } = storeToRefs(answersStore);
+</script>
 
 <template>
   <main>
@@ -11,9 +16,17 @@
       </div>
     </div>
     <div class="middle">
-      <NuxtLink to="/kalkulacka/intro/1"
-        ><PrimaryButton content="Spustit kalkulačku ->"
-      /></NuxtLink>
+      <div class="buttons-wrap">
+        <NuxtLink to="/kalkulacka/intro/1"
+          ><PrimaryButton content="Spustit kalkulačku ->"
+        /></NuxtLink>
+        <NuxtLink
+          to="/kalkulacka/vysledek"
+          v-if="viewedResults"
+          class="results-btn"
+          ><SecondaryButton :red="false" text="Zobrazit výsledek ->" />
+        </NuxtLink>
+      </div>
       <NuxtLink class="link-parties" to="/strany"
         >Strany, které v kalkulačce najdete -></NuxtLink
       >
@@ -70,5 +83,14 @@ h3 {
   & > p {
     line-height: 1.2;
   }
+}
+
+.buttons-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-btn {
+  padding-bottom: 20px;
 }
 </style>
