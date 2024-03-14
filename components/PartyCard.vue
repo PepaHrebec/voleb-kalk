@@ -7,30 +7,56 @@ defineProps<{
 </script>
 
 <template>
-  <div class="wrap">
-    <div class="top">
-      <svg height="40" width="40" xmlns="http://www.w3.org/2000/svg">
-        <circle r="18" cx="20" cy="20" :fill="party.circleColor" />
-      </svg>
-      <h2>{{ party.name }}</h2>
+  <div class="main-wrap" :id="party.shortcut">
+    <div class="left" :style="{ backgroundColor: party.color }"></div>
+    <div class="right-wrap">
+      <div class="top">
+        <h3>{{ party.name }}</h3>
+        <p>
+          Představitelé:
+          <span class="rep">{{ party.representatives.join(", ") }}</span>
+        </p>
+      </div>
+      <p>{{ party.description }}</p>
     </div>
-    <p>{{ party.description }}</p>
   </div>
 </template>
 
 <style scoped>
-.wrap {
-  display: flex;
-  flex-direction: column;
-}
-.top {
+.main-wrap {
+  background-color: white;
+  border: solid 1px rgb(201, 201, 201);
+  box-shadow: 11px 10px 12px -4px rgba(224, 224, 224, 1);
+  border-radius: 8px;
   display: flex;
   flex-direction: row;
-  gap: 8px;
-  align-items: center;
 }
 
-svg {
-  transform: scale(0.8);
+.rep {
+  color: var(--text-gray);
+}
+
+.left {
+  width: 8px;
+  border-radius: 8px 0 0 8px;
+  flex-shrink: 0;
+}
+
+.right-wrap {
+  padding: 8px 8px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h3,
+p {
+  line-height: 1.4;
 }
 </style>
