@@ -37,4 +37,10 @@ p {
   font-weight: bold;
   color: black;
 }
+
+@media screen and (min-width: 400px) {
+  .layout-wrap {
+    padding: 16px 32px;
+  }
+}
 </style>
