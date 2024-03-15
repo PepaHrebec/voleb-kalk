@@ -30,11 +30,11 @@ const dropdown = ref(false);
       <div class="question-number">
         {{ questionNumber }} / {{ questionsLength }}
       </div>
-      <h2>
+      <h3>
         <NuxtLink :to="`/kalkulacka/otazky/${questionNumber}`" class="title">{{
           question.title
         }}</NuxtLink>
-      </h2>
+      </h3>
       <div>
         Odpověď:
         {{
@@ -76,7 +76,9 @@ const dropdown = ref(false);
   background-color: white;
   border: solid 1px rgb(201, 201, 201);
   box-shadow: 11px 10px 12px -4px rgba(224, 224, 224, 1);
-  border-radius: 8px;
+  width: 100%;
+  max-width: 630px;
+  border-radius: 12px;
 }
 
 .btns {
@@ -93,7 +95,7 @@ const dropdown = ref(false);
   color: black;
 }
 
-h2 {
+h3 {
   padding: 12px 0 4px;
 }
 
@@ -104,9 +106,10 @@ h2 {
 .dropdown-btn {
   width: 100%;
   border: none;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 12px 12px;
   padding: 12px;
   font-size: 1.1em;
+  cursor: pointer;
 }
 
 .show-enter-active,

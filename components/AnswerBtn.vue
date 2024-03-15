@@ -6,7 +6,11 @@ const props = defineProps<{
 }>();
 
 const selected = computed(() => {
-  return props.clickedValue === props.alreadyAnsweredValue ? "selected" : "";
+  if (props.clickedValue === props.alreadyAnsweredValue) {
+    return "selected";
+  } else {
+    return "";
+  }
 });
 </script>
 

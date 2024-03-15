@@ -2,6 +2,7 @@
 defineProps<{
   title: string;
   isIntro: boolean;
+  text: string;
   currentQuestionNum?: number;
   listLength?: number;
 }>();
@@ -13,9 +14,7 @@ defineProps<{
       <p>{{ currentQuestionNum }} / {{ listLength }}</p>
       <h1>{{ title }}</h1>
       <p>
-        Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-        Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-        Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+        {{ text }}
       </p>
     </div>
     <div class="bottom-wrap">
@@ -40,6 +39,7 @@ main {
   box-shadow: 11px 10px 12px -4px rgba(224, 224, 224, 1);
   display: flex;
   flex-direction: column;
+  max-width: 730px;
 }
 
 .top-wrap {
@@ -55,5 +55,6 @@ h1 {
 
 p {
   color: var(--text-gray);
+  line-height: 1.4;
 }
 </style>

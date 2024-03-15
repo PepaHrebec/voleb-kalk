@@ -21,6 +21,7 @@ button {
   font-size: 1.2em;
   flex: 1;
   min-width: 150px;
+  width: 100%;
   &:hover {
     cursor: pointer;
   }

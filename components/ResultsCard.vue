@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Party } from "~/types/types";
+
 const props = defineProps<{
   results: {
     shortcut: string;
@@ -6,18 +8,25 @@ const props = defineProps<{
     name: string;
     percentage: number;
   };
+  party: Party | undefined;
 }>();
 
 const percentage = computed(() => {
   return props.results.percentage + "%";
 });
+
+const route = computed(() => {
+  return "/strany#" + props.party?.shortcut;
+});
 </script>
 <template>
   <div class="main-wrap">
-    <div class="left"></div>
+    <div class="left" :style="{ backgroundColor: party?.color }"></div>
     <div class="right">
       <div class="top">
-        <h3>{{ results.name }}</h3>
+        <NuxtLink :to="route"
+          ><h3>{{ party?.name }}</h3></NuxtLink
+        >
         <div class="percentage">{{ Math.round(results.percentage) }} %</div>
       </div>
       <div class="bottom">
@@ -36,12 +45,15 @@ const percentage = computed(() => {
   border-radius: 8px;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 630px;
 }
 
 .left {
   border-radius: 8px 0 0 8px;
   width: 8px;
   background-color: red;
+  flex-shrink: 0;
 }
 
 .right {
@@ -51,19 +63,16 @@ const percentage = computed(() => {
 
 .top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 12px;
 }
 
 .percentage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--text-gray);
 }
 
 .bottom {
-  padding: 24px 0 12px;
+  padding: 12px 0 12px;
 }
 
 .line {
@@ -78,5 +87,11 @@ const percentage = computed(() => {
   height: 8px;
   border-radius: 8px;
   background-color: var(--primary-blue);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  width: fit-content;
 }
 </style>

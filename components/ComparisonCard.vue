@@ -92,6 +92,8 @@ const dropdown = ref(false);
   border: solid 1px rgb(201, 201, 201);
   box-shadow: 11px 10px 12px -4px rgba(224, 224, 224, 1);
   border-radius: 8px;
+  width: 100%;
+  max-width: 630px;
 }
 
 .responses {
@@ -133,6 +135,7 @@ h3 {
   border-radius: 0 0 8px 8px;
   padding: 12px;
   font-size: 1.1em;
+  cursor: pointer;
 }
 
 .show-enter-active,

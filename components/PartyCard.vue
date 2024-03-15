@@ -30,6 +30,8 @@ defineProps<{
   border-radius: 8px;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 630px;
 }
 
 .rep {

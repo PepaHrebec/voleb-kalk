@@ -17,5 +17,7 @@ defineProps<{
   padding: 12px;
   color: var(--primary-red);
   border-radius: 8px;
+  width: 100%;
+  max-width: 630px;
 }
 </style>

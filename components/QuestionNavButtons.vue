@@ -14,16 +14,32 @@ defineProps<{
       v-if="currentQuestionNum !== 1"
       :to="`/kalkulacka/otazky/` + (currentQuestionNum - 1)"
       class="arrow"
-      >&lt;-</NuxtLink
+      ><div class="arrow-wrap">
+        <div>&lt;-</div>
+        <p>Zpět</p>
+      </div></NuxtLink
     >
-    <div class="arrow disabled" v-else>&lt;-</div>
+    <div class="arrow disabled" v-else>
+      <div class="arrow-wrap">
+        <div>&lt;-</div>
+        <p>Zpět</p>
+      </div>
+    </div>
     <NuxtLink
       class="arrow"
       v-if="currentQuestionNum !== listLength"
       :to="`/kalkulacka/otazky/` + (currentQuestionNum + 1)"
-      >-&gt;</NuxtLink
+      ><div class="arrow-wrap">
+        <div>-&gt;</div>
+        <p>Dál</p>
+      </div></NuxtLink
     >
-    <div class="arrow disabled" v-else>-&gt;</div>
+    <div class="arrow disabled" v-else>
+      <div class="arrow-wrap">
+        <div>-&gt;</div>
+        <p>Dál</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -43,5 +59,16 @@ defineProps<{
 
 .disabled {
   color: rgb(157, 157, 157);
+}
+
+.arrow-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-wrap p {
+  font-size: 0.5em;
 }
 </style>

@@ -19,5 +19,10 @@ button {
   box-shadow: 0 4px 6px 0 var(--primary-blue);
   margin-bottom: 20px;
   cursor: pointer;
+  width: 100%;
+  transition: transform 300ms;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 </style>
