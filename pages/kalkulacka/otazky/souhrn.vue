@@ -19,10 +19,15 @@ const { questionsList } = storeToRefs(questionsStore);
       :questions-length="questionsList?.length"
     />
   </div>
-  <WarningCard
-    title="Varování"
-    content='Po odeslání budou Vaše nezodpovězené otázky počítány jako "Nevím". Zkontrolujte si, jestli jste nějaké neopomněl.'
-  />
+  <div class="bottom">
+    <WarningCard
+      title="Varování"
+      content='Po odeslání budou Vaše nezodpovězené otázky počítány jako "Nevím". Zkontrolujte si, jestli jste nějaké neopomněl.'
+    />
+    <NuxtLink to="/kalkulacka/vysledek">
+      <PrimaryButton content="Vyhodnotit" />
+    </NuxtLink>
+  </div>
 </template>
 <style scoped>
 .summary-card-wrap {
@@ -31,5 +36,18 @@ const { questionsList } = storeToRefs(questionsStore);
   gap: 12px;
   padding-top: 12px;
   padding-bottom: 24px;
+  align-items: center;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 24px;
+  max-width: 630px;
+  margin: 0 auto;
+}
+a {
+  width: 100%;
 }
 </style>

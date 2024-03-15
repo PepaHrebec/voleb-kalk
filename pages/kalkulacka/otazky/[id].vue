@@ -18,7 +18,7 @@ function answerAndRoute(answerValue: number) {
         ? `/kalkulacka/otazky/${currentQuestionNum.value + 1}`
         : "/kalkulacka/otazky/souhrn"
     );
-  }, 200);
+  }, 0);
 }
 
 const currentQuestionNum = computed(() => {
@@ -63,6 +63,8 @@ const questionTitle = computed(() => {
 .question-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 </style>

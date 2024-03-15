@@ -18,6 +18,7 @@ const { data } = await useAsyncData("home", () =>
 .parties-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
   gap: 12px;
