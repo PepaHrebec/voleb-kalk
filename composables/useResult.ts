@@ -7,8 +7,13 @@ function innerCalculation(partyAns: number, userAns: number) {
       return 0.25;
     }
   }
+
+  if (userAns === 3 && (partyAns === 5 || partyAns === 1)) {
+    return Math.abs(partyAns - userAns);
+  }
+
   if (userAns === 3) {
-    return Math.abs(partyAns - userAns) / 2;
+    return (Math.abs(partyAns - userAns) / 3) * 4;
   }
 
   return Math.abs(partyAns - userAns);
@@ -33,8 +38,10 @@ export default async function useResult() {
     return null;
   }
 
-  answersList.value?.forEach((value) => {
-    value === 0 ? 3 : value;
+  answersList.value?.forEach((value, index) => {
+    if (answersList.value !== undefined) {
+      value === 0 ? (answersList.value[index] = 3) : null;
+    }
   });
 
   partyAnswersData.data.value.answers.forEach((partyData) => {
