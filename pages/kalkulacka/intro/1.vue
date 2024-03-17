@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Návod - 1",
+});
+</script>
 
 <template>
   <div class="intro-wrap">

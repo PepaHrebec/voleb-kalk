@@ -3,6 +3,10 @@ import useResult from "~/composables/useResult";
 import { useAnswersStore } from "~/scripts/answersStore";
 import type { ParsedParties } from "~/types/types";
 
+useHead({
+  title: "Výsledek",
+});
+
 const results = await useResult();
 
 const { data } = await useAsyncData("home", () =>
@@ -29,7 +33,7 @@ viewedResults.value = true;
     <WarningCard
       class="warning"
       title="Upřesnění"
-      content="Rád bych ještě jednou poznamenal, že kompas Vás více méně staví do pozice etnického Čecha s nekonkrétním zaměstnáním, protože pouhá etnická nebo třídní příslušnost by kompletně rozhodila Vaše volební preference."
+      content="Rád bych ještě jednou poznamenal, že kalkulačka Vás více méně staví do pozice etnického Čecha s nekonkrétním zaměstnáním, protože pouhá etnická nebo třídní příslušnost by kompletně rozhodila Vaše volební preference."
     />
   </div>
   <div class="buttons-wrap">

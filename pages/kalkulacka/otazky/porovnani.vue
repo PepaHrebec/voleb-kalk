@@ -2,6 +2,10 @@
 import ComparisonCard from "~/components/ComparisonCard.vue";
 import { useQuestionsStore } from "~/scripts/questionsStore";
 
+useHead({
+  title: "Porovnání",
+});
+
 const questionsStore = useQuestionsStore();
 const { questionsList } = storeToRefs(questionsStore);
 </script>

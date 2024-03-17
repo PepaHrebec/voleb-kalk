@@ -37,6 +37,10 @@ const questionTitle = computed(() => {
     ? questionsList.value[currentQuestionNum.value - 1].title
     : ``;
 });
+
+useHead({
+  title: `Otázka ${currentQuestionNum.value}`,
+});
 </script>
 
 <template>
@@ -65,6 +69,5 @@ const questionTitle = computed(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 </style>

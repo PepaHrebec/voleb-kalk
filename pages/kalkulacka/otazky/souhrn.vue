@@ -2,6 +2,10 @@
 import useResult from "~/composables/useResult";
 import { useQuestionsStore } from "~/scripts/questionsStore";
 
+useHead({
+  title: "Souhrn",
+});
+
 const trye = await useResult();
 
 console.log(trye);

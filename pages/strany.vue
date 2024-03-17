@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import type { ParsedParties } from "~/types/types";
 
+useHead({
+  title: "Přehled stran",
+});
+
 const { data } = await useAsyncData("home", () =>
   queryContent<ParsedParties>("/parties").findOne()
 );
