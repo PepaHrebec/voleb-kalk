@@ -3,7 +3,7 @@ defineProps<{
   title: string;
   isIntro: boolean;
   text: string;
-  importantList: boolean[] | undefined;
+  importantList?: boolean[] | undefined;
   currentQuestionNum?: number;
   listLength?: number;
 }>();
