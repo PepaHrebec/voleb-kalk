@@ -2,6 +2,7 @@
 defineProps<{
   currentQuestionNum: number | undefined;
   listLength: number | undefined;
+  importantList: boolean[] | undefined;
 }>();
 </script>
 
@@ -25,6 +26,11 @@ defineProps<{
         <p>Zpět</p>
       </div>
     </div>
+    <StarButton
+      :question-number="currentQuestionNum"
+      :important-list="importantList"
+      class="star"
+    />
     <NuxtLink
       class="arrow"
       v-if="currentQuestionNum !== listLength"
@@ -70,5 +76,9 @@ defineProps<{
 
 .arrow-wrap p {
   font-size: 0.5em;
+}
+
+.star {
+  transform: translateY(6px);
 }
 </style>
