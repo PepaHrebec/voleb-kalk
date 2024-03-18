@@ -7,6 +7,7 @@ const { questionsList } = storeToRefs(questionsStore);
 
 const answersStore = useAnswersStore();
 const { answersList } = storeToRefs(answersStore);
+const { importantList } = storeToRefs(answersStore);
 
 const route = useRoute();
 
@@ -55,6 +56,7 @@ useHead({
       :current-question-num="currentQuestionNum"
       :list-length="questionsList?.length"
       :is-intro="false"
+      :important-list="importantList"
     />
     <AnswerButtons
       @send-value="answerAndRoute"

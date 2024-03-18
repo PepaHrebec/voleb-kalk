@@ -3,6 +3,7 @@ defineProps<{
   title: string;
   isIntro: boolean;
   text: string;
+  importantList: boolean[] | undefined;
   currentQuestionNum?: number;
   listLength?: number;
 }>();
@@ -22,6 +23,7 @@ defineProps<{
         v-if="!isIntro"
         :current-question-num="currentQuestionNum"
         :list-length="listLength"
+        :important-list="importantList"
         @sendValue="(value) => console.log(value)"
       />
     </div>
