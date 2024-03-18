@@ -2,6 +2,7 @@ import type { ParsedQuestions } from "~/types/types";
 
 export const useAnswersStore = defineStore("answers", () => {
   let answersList = ref<number[] | undefined>([]);
+  let importantList = ref<boolean[] | undefined>([]);
   let viewedResults = ref<boolean>(false);
 
   function setAnswer(answerPosition: number, answerValue: number) {
@@ -20,9 +21,16 @@ export const useAnswersStore = defineStore("answers", () => {
         (answersList.value?.length ?? 0) < (data.value?.questions.length ?? 0)
       ) {
         answersList.value?.push(0);
+        importantList.value?.push(false);
       }
     }
   }
 
-  return { answersList, viewedResults, fillAnswersStore, setAnswer };
+  return {
+    answersList,
+    importantList,
+    viewedResults,
+    fillAnswersStore,
+    setAnswer,
+  };
 });
