@@ -25,6 +25,7 @@ const templateText = ["Silně ano", "Ano", "Nevím", "Ne", "Silně ne"];
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+  padding: 16px 0;
 }
 
 .middle {

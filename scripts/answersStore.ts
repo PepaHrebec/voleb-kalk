@@ -2,6 +2,7 @@ import type { ParsedQuestions } from "~/types/types";
 
 export const useAnswersStore = defineStore("answers", () => {
   let answersList = ref<number[] | undefined>([]);
+  let viewedResults = ref<boolean>(false);
 
   function setAnswer(answerPosition: number, answerValue: number) {
     if (answersList.value !== undefined) {
@@ -11,7 +12,7 @@ export const useAnswersStore = defineStore("answers", () => {
   }
 
   async function fillAnswersStore() {
-    const { data } = await useAsyncData("answersData", () =>
+    const { data } = await useAsyncData("questionsData", () =>
       queryContent<ParsedQuestions>("/questions").findOne()
     );
     for (let i = 0; i < (data.value?.questions.length ?? 0); i++) {
@@ -23,5 +24,5 @@ export const useAnswersStore = defineStore("answers", () => {
     }
   }
 
-  return { answersList, fillAnswersStore, setAnswer };
+  return { answersList, viewedResults, fillAnswersStore, setAnswer };
 });
