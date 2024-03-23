@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "cs",
       },
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
   nitro: {

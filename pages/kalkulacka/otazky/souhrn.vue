@@ -6,10 +6,6 @@ useHead({
   title: "Souhrn",
 });
 
-const trye = await useResult();
-
-console.log(trye);
-
 const questionsStore = useQuestionsStore();
 const { questionsList } = storeToRefs(questionsStore);
 </script>

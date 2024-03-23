@@ -9,7 +9,6 @@ export const useAnswersStore = defineStore("answers", () => {
     if (answersList.value !== undefined) {
       answersList.value[answerPosition] = answerValue;
     }
-    console.log(answersList.value);
   }
 
   async function fillAnswersStore() {
