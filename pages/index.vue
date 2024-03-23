@@ -43,7 +43,7 @@ const { viewedResults } = storeToRefs(answersStore);
       <p>
         Tato volební kalkulačka je neoficiální verzí známé
         <a href="https://www.volebnikalkulacka.cz/">Volební kalkulačky</a> z
-        dílny Cesko.digital, kterým vzdávám velký dík. Nijak se netajím tím, že
+        dílny Cesko.Digital, kterým vzdávám velký dík. Nijak se netajím tím, že
         jsem od nich z velké části přebral design a barevné schéma, ale krom
         toho jde o zcela originální počin, který vznikl pouze z mého zájmu o
         historii, politiku a web.
@@ -53,7 +53,7 @@ const { viewedResults } = storeToRefs(answersStore);
       <h2>Motivace</h2>
       <p>
         Období První republiky je v české historii až mytizované období, které
-        ale naráželo na potíže stejně tak, jako my dnes. Sudetští němci, Velká
+        ale naráželo na potíže stejně tak, jako my dnes. Sudetští Němci, Velká
         hospodářská krize, náboženské roztržky a z pohledu dnešní doby možná až
         fanatické členské základy politických stran. Kalkulačka nevznikla pouze
         pro zábavu, ale také proto, aby informovala o tématech, které byly pro
