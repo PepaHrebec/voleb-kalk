@@ -10,63 +10,63 @@
     {
       "name": "Národní Socialisté",
       "shortcut": "CSNS",
-      "description": "Národně liberální strana s programem založeným na nemarxistickém socialismu. Strana se silně opírala o Hrad a demokracii, odmítala násilný třídní boj. Během let se stala stranou nejen národně oritentovaných dělníků, ale i úředníků a maloburžoazie.",
+      "description": "Národně liberální strana s programem založeným na nemarxistickém socialismu. Strana se silně opírala o Hrad a demokracii, odmítala násilný třídní boj. Během let se stala stranou nejen národně orientovaných dělníků, ale i úředníků a maloburžoazie.",
       "representatives": ["Edvard Beneš", "Milada Horáková"],
       "color": "gold"
     },
     {
       "name": "Republikánská strana zemědělského a malorolnického lidu",
       "shortcut": "AGR",
-      "description": "A pretty based party imho.",
+      "description": "Středopravicová agrární strana vedená po většinu své existence Antonínem Švehlou byla jednou z nejmocnějších stran Československa. Pevně se zasazovala o práva malých zemědělců a rolníků, o pozemkovou reformu, rovnoprávnost Slováků a o dobré vztahy s Němci skrz kooperaci s BdL. Strana byla silně protikomunisticky založena a podporovala roli náboženství ve státě.",
       "representatives": ["Antonín Švehla", "Rudolf Beran"],
       "color": "#65a30d"
     },
     {
       "name": "Československá strana lidová",
       "shortcut": "CSL",
-      "description": "A pretty based party imho.",
+      "description": "Středová strana, která se pod vedením Jana Šrámka účastnila mnoha vlád, stavěla svůj program na myšlence křesťanského solidarismu, ideologie, co na jednu stranu poměrně silně kritizovala kapitalismus, ale na druhou stranu nijak nezavrhovala soukromé vlastnictví. Silně se opírala o katolickou morálku a o vlastenectví.",
       "representatives": ["Jan Šrámek"],
       "color": "#3b82f6"
     },
     {
       "name": "Československá sociálně demokratická strana dělnická",
       "shortcut": "CSSD",
-      "description": "A pretty based party imho.",
+      "description": "Základ programu strany stojí na nenásilném boji proti kapitalismu, který strana považuje za příčinu mnoha současných potíží. Je pro pozemkovou reformu v prospěch malých zemědělců, 40 hodinovou pracovní dobu, plně ctí demokratickou podstatu republiky a odmítá jakékoliv omezování osobních svobod.",
       "representatives": ["Antonín Hampl", "Vlastimil Tusar"],
       "color": "#f97316"
     },
     {
       "name": "Komunistická strana Československa",
       "shortcut": "KSC",
-      "description": "A pretty based party imho.",
+      "description": "Komunistická strana nedisponovala narozdíl od sociálních demokratů klasickým programem, nýbrž se obecně stavěla proti republikánskému zřízení, kapitalismu a vlastenectví. Poměrně otevřeně jednala jako satelit Internacionály a Sovětského Svazu, od kterého přejímala většinu svých témat a názorů.",
       "representatives": ["Klement Gottwald", "Rudolf Slánský"],
       "color": "#b91c1c"
     },
     {
       "name": "Národní Demokracie",
       "shortcut": "ND",
-      "description": "A pretty based party imho.",
-      "representatives": ["Karel Kramář", "Alois Rašín"],
+      "description": "Pravicová konzervativní strana, která se jako první strana otevřeně postavila Rakouskému císařství. Byla silně antikomunistická, vlastenecká, hlásala sociální spravedlnost a zasazovala se o velký státní aparát. Měla křídla, která sahala od industrialistů až po revoluční prvky ve stylu italského fašizmu.",
+      "representatives": ["Karel Kramář", "Alois Rašín", "Viktor Dyk"],
       "color": "#1e3a8a"
     },
     {
       "name": "Československá živnostensko-obchodnická strana středostavovská",
       "shortcut": "ZIV",
-      "description": "A pretty based party imho.",
+      "description": "Živnostenská strana byla liberální středopravá strana, která své voliče nacházela převážně v živnostenském stavu a širší střední třídě. Podporovala ekonomický nacionalismus a bojovala proti zájmům velkokapitálu, který společně s bolševismem považovala za nepřátele prosperity. Byla velkým zastáncem demokratických procesů a svobody vyznání.",
       "representatives": ["Rudolf Mlčoch", "Josef Najman"],
       "color": "#fb7185"
     },
     {
       "name": "Hlinkova slovenská ľudová strana",
       "shortcut": "HL",
-      "description": "A pretty based party imho.",
+      "description": "Slovenská strana založená katolickým knězem Andrejem Hlinkou se silně opírala o katolickou církev, slovenské nacionalisty a nespokojené slovenské voliče obecně. Ze začátku stavěla svůj program na slovenské autonomii přislíbené Slovákům v Pittsburské dohodě, ale později si našla cestu až ke klerofašizmu, ke kterému se od roku 1936 otevřeně hlásila.",
       "representatives": ["Andrej Hlinka", "Jozef Tiso", "Vojtech Tuka"],
       "color": "#e11d48"
     },
     {
       "name": "Sudetoněmecká strana",
       "shortcut": "SDP",
-      "description": "A pretty based party imho.",
+      "description": "Defacto prodloužená ruka Adolfa Hitlera a jeho Nacistické strany vznikla absorpcí většiny menších německých stran. Strana měla sice naoko program, kterým se snažila dosáhnout v rámci republiky práv pro Němce, ale šlo jí primárně o destabilizaci Československa a o anexi Sudet Německem. Poněkud kuriozně se v roce 1935 stala druhou největší stranou v parlamentu.",
       "representatives": ["Konrad Henlein"],
       "color": "#92400e"
     }
