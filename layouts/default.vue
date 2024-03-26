@@ -2,7 +2,7 @@
 defineOgImageComponent("NuxtSeo", {
   title: "Koho byste volili za První republiky?",
   theme: "#0470ee",
-  siteName: "Volební kalulačka",
+  siteName: "Volební kalkulačka",
 });
 </script>
 
