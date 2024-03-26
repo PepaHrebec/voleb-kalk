@@ -138,6 +138,8 @@ h3 {
   padding: 12px;
   font-size: 1.1em;
   cursor: pointer;
+  color: black;
+  background-color: rgb(239, 239, 239);
 }
 
 .show-enter-active,
