@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+defineOgImageComponent("NuxtSeo", {
+  title: "Koho byste volili za První republiky?",
+  theme: "#0470ee",
+  siteName: "Volební kalulačka",
+});
+</script>
+
 <template>
   <div class="layout-wrap">
     <header>
