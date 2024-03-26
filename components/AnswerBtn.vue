@@ -47,4 +47,11 @@ button {
   color: white;
   background-color: var(--primary-blue);
 }
+
+@media screen and (max-width: 440px) {
+  .blue:hover {
+    color: var(--primary-blue);
+    background-color: white;
+  }
+}
 </style>

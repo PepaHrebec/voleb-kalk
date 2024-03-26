@@ -81,4 +81,10 @@ defineProps<{
 .star {
   transform: translateY(6px);
 }
+
+@media screen and (max-width: 440px) {
+  .link-wrap {
+    padding-top: 12px;
+  }
+}
 </style>
