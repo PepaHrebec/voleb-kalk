@@ -31,31 +31,23 @@ button {
   color: red;
   border: solid 2px red;
   background-color: white;
-  &:hover {
-    color: white;
-    background-color: red;
-  }
 }
 
 .blue {
   color: var(--primary-blue);
   border: solid 2px var(--primary-blue);
   background-color: white;
-  &:hover {
+}
+
+@media (hover: hover) {
+  .blue:hover {
     color: white;
     background-color: var(--primary-blue);
   }
-}
-
-@media screen and (max-width: 440px) {
-  .blue:hover {
-    color: var(--primary-blue);
-    background-color: white;
-  }
 
   .red:hover {
-    color: red;
-    background-color: white;
+    color: white;
+    background-color: red;
   }
 }
 </style>

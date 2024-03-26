@@ -37,10 +37,6 @@ button {
   color: var(--primary-blue);
   border: solid 2px var(--primary-blue);
   background-color: white;
-  &:hover {
-    color: white;
-    background-color: var(--primary-blue);
-  }
 }
 
 .selected {
@@ -48,10 +44,10 @@ button {
   background-color: var(--primary-blue);
 }
 
-@media screen and (max-width: 440px) {
+@media (hover: hover) {
   .blue:hover {
-    color: var(--primary-blue);
-    background-color: white;
+    color: white;
+    background-color: var(--primary-blue);
   }
 }
 </style>
